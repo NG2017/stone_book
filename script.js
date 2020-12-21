@@ -1,5 +1,5 @@
-/* function pageLoaded() {
- */
+function pageLoaded() {
+
     // a munka megkezdese elott alaposan atgondolni a lepesek egymasutanjat
     // mar mukodo kodrol biztonsagi mentes nagyobb atiras elott
     // a kesz kod optimalizalasa - mukodes-sorrend-nevek
@@ -133,6 +133,7 @@
         codeContent: `
         // don't use
         /* innerHTML = ""; */
+        rootDiv = document.getElementById("root");
 
         rootDiv.insertAdjacentHTML("beforeend", \'
         something
@@ -160,6 +161,6 @@
       
     }
 
- /*    
+    
 }
-window.addEventListener("load", pageLoaded); */
+window.addEventListener("load", pageLoaded);

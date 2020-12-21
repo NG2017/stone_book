@@ -3,6 +3,9 @@
   License: BSD-3-Clause
   Copyright (c) 2006-2020, Ivan Sagalaev
 */
+function pageLoaded() {
+
+  console.log("ez is fut");
 
 var hljs=function(){"use strict";function e(t){
     return t instanceof Map?t.clear=t.delete=t.set=()=>{
@@ -1189,3 +1192,11 @@ var hljs=function(){"use strict";function e(t){
     },{className:"number",begin:e.C_NUMBER_RE+"\\b",relevance:0},t,g,s],r=[...b]
     ;return r.pop(),r.push(i),l.contains=r,{name:"YAML",case_insensitive:!0,
     aliases:["yml","YAML"],contains:b}}})());
+
+
+    hljs.initHighlighting.called = false;
+    hljs.initHighlighting();  
+
+
+}
+window.addEventListener("load", pageLoaded);
