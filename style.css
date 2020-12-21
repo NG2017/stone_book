@@ -1,0 +1,37 @@
+ˇ*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: burlywood;
+    padding: 20px 20px;
+}
+#root {
+    margin: 0 auto;
+    max-width: 600px;
+}
+#root > div {
+    box-shadow: 2px 2px 3px #333;
+    padding: 20px;
+    background: cornsilk;
+    margin-bottom: 30px;
+}
+#root > div > div {
+    margin: 0 0 5px;
+}
+div {
+    font-family: 'Oswald', sans-serif;
+}
+code {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+	border: 1px solid #aaa;
+	padding: 20px;
+	display: block;
+	background: #eee;
+}
+
+
